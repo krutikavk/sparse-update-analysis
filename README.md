@@ -180,7 +180,8 @@ Space losses: 3 bytes internal + 4 bytes external = 7 bytes total
 This indicates Boolean fields consume a 1-byte space while Bitset is much more optimized for storing Boolean field values. 
 This disparity will increase further with increase in fields. 
 
-
+## Reference and Additional Materials
+https://www.baeldung.com/java-boolean-array-bitset-performance#:~:text=In%20terms%20of%20cardinality%20throughput,to%20the%20corresponding%20boolean%5B%5D
 
 
 
