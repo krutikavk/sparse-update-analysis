@@ -1,6 +1,4 @@
-# Getting Started
-
-## Bitset vs Boolean Solutions
+# Bitset vs Boolean Solutions
 I used [Java Object Layout (JOL)](https://mvnrepository.com/artifact/org.openjdk.jol/jol-core) to look at memory footprint for Bitset vs Boolean Objects. 
 
 I compared Bitset vs Boolean solutions for comparing classes with: 
