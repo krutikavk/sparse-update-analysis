@@ -1,13 +1,14 @@
 # Getting Started
 
-### Bitset vs Boolean Solutions
+## Bitset vs Boolean Solutions
 I used [Java Object Layout (JOL)](https://mvnrepository.com/artifact/org.openjdk.jol/jol-core) to look at memory footprint for Bitset vs Boolean Objects. 
 
 I compared Bitset vs Boolean solutions for comparing classes with: 
 1. 3 fields 
 2. 33 fields
 
-### Data Classes with 3 fields: Bitset vs Boolean
+## Data Classes with 3 fields: Bitset vs Boolean
+
 [3-field Bitset class](https://github.com/krutikavk/sparse-update-analysis/blob/main/demo/src/main/java/com/example/demo/ShowBitset.java)
 
 BITSET 3 fields class:
@@ -24,6 +25,7 @@ Instance size: 32 bytes
 Space losses: 0 bytes internal + 4 bytes external = 4 bytes total
 
 [3-field Boolean class](https://github.com/krutikavk/sparse-update-analysis/blob/main/demo/src/main/java/com/example/demo/ShowBoolean.java)
+
 BOOLEAN 3 fields class:
 com.example.demo.ShowBoolean object internals:
 OFF  SZ                TYPE DESCRIPTION                        VALUE
@@ -40,10 +42,12 @@ OFF  SZ                TYPE DESCRIPTION                        VALUE
 Instance size: 32 bytes
 Space losses: 1 bytes internal + 4 bytes external = 5 bytes total
 
-
 Both Bitset and Boolean based solutions fare similarly for both solutions.
 
-### Data Classes with 33 fields: Bitset vs Boolean
+
+
+## Data Classes with 33 fields: Bitset vs Boolean
+
 [33-field Bitset class](https://github.com/krutikavk/sparse-update-analysis/blob/main/demo/src/main/java/com/example/demo/UpdateShowInputBitset.java)
 
 BITSET 33 fields class:
