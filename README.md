@@ -1,9 +1,11 @@
 # Bitset vs Boolean Solutions
-I used [Java Object Layout (JOL)](https://mvnrepository.com/artifact/org.openjdk.jol/jol-core) to look at memory footprint for Bitset vs Boolean Objects. 
+I used [Java Object Layout (JOL)](https://mvnrepository.com/artifact/org.openjdk.jol/jol-core) to look at memory footprint for Bitset vs Boolean Objects.
 
 I compared Bitset vs Boolean solutions for comparing classes with: 
 1. 3 fields 
 2. 33 fields
+
+[Code for Analyzing objects](https://github.com/krutikavk/sparse-update-analysis/blob/main/demo/src/main/java/com/example/demo/DemoApplication.java#L35-L47)
 
 ## Data Classes with 3 fields: Bitset vs Boolean
 
