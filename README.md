@@ -13,14 +13,15 @@ I compared Bitset vs Boolean solutions for comparing classes with:
 
 BITSET 3 fields class:
 com.example.demo.ShowBitset object internals:
-OFF  SZ                TYPE DESCRIPTION                VALUE
-0    8                     (object header: mark)      0x0000000000000001 (non-biasable; age: 0)
-8    4                     (object header: class)     0x010d7658
-12   4    java.lang.String ShowBitset.id              (object)
-16   4    java.lang.String ShowBitset.title           (object)
-20   4   java.lang.Integer ShowBitset.releaseYear     2010
-24   4    java.util.BitSet ShowBitset.fieldsPresent   (object)
-28   4                     (object alignment gap)     
+| OFF | SZ  |              TYPE DESCRIPTION             |       VALUE                                |
+| --- | --- | ----------------------------------------- | ------------------------------------------ |
+| 0   | 8   |                  (object header: mark)    |  0x0000000000000001 (non-biasable; age: 0) |
+| 8   | 4   |                  (object header: class)   |  0x010d7658                                |
+| 12  | 4   | java.lang.String ShowBitset.id            |  (object)                                  |
+| 16  | 4   | java.lang.String ShowBitset.title         |  (object)                                  |
+| 20  | 4   | java.lang.Integer ShowBitset.releaseYear  |   2010                                     |
+| 24  | 4   | java.util.BitSet ShowBitset.fieldsPresent |  (object)                                  |
+| 28  | 4   |                  (object alignment gap)   |                                            |
 Instance size: 32 bytes
 Space losses: 0 bytes internal + 4 bytes external = 4 bytes total
 
@@ -29,7 +30,7 @@ Space losses: 0 bytes internal + 4 bytes external = 4 bytes total
 BOOLEAN 3 fields class:
 com.example.demo.ShowBoolean object internals:
 OFF  SZ                TYPE DESCRIPTION                        VALUE
-0    8                     (object header: mark)              0x0000000000000001 (non-biasable; age: 0)
+0    8                      (object header: mark)              0x0000000000000001 (non-biasable; age: 0)
 8    4                     (object header: class)             0x010d7898
 12   1             boolean ShowBoolean.isIdDefined            true
 13   1             boolean ShowBoolean.isTitleDefined         true
